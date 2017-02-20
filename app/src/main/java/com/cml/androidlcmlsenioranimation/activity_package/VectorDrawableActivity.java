@@ -1,4 +1,4 @@
-package com.cml.androidlcmlsenioranimation;
+package com.cml.androidlcmlsenioranimation.activity_package;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.cml.androidlcmlsenioranimation.R;
 
 
 /**

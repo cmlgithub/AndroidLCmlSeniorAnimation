@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VectorDrawableActivity"></activity>
+        <activity android:name=".activity_package.VectorDrawableActivity" />
+        <activity android:name=".activity_package.SecondBezierActivity" />
+        <activity android:name=".activity_package.ThirdBezierActivity" />
+        <activity android:name=".activity_package.TwoPointSmoothDealActivity"></activity>
     </application>
 
 </manifest>
