@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.cml.androidlcmlsenioranimation.activity_package.AddShoppingCartActivity;
+import com.cml.androidlcmlsenioranimation.activity_package.LoadingPathMeasureActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.PathMorphingBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.SecondBezierActivity;
+import com.cml.androidlcmlsenioranimation.activity_package.TenAnimationActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.ThirdBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.TwoPointSmoothDealActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.VectorDrawableActivity;
@@ -41,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void addShoppingCart(View view){
         startActivity(new Intent(this,AddShoppingCartActivity.class));
+    }
+    public void loadingPathMeasure(View view){
+        startActivity(new Intent(this,LoadingPathMeasureActivity.class));
+    }
+    public void tenAnimation(View view){
+        startActivity(new Intent(this,TenAnimationActivity.class));
     }
 }

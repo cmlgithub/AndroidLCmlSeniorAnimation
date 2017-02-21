@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_loading_path_measure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.cml.androidlcmlsenioranimation.activity_package.LoadingPathMeasureActivity">
+
+
+        <com.cml.androidlcmlsenioranimation.custome_package.CirclePathMeasureView
+            android:layout_height="200dp"
+            android:layout_width="200dp"/>
+
+        <com.cml.androidlcmlsenioranimation.custome_package.LoadingPathMeasureView
+            android:layout_height="200dp"
+            android:layout_width="200dp"/>
+        <com.cml.androidlcmlsenioranimation.custome_package.LoadingPathMeasureView2
+            android:layout_height="200dp"
+            android:layout_width="200dp"/>
+        <com.cml.androidlcmlsenioranimation.custome_package.PathPosTanView
+            android:layout_height="200dp"
+            android:layout_width="200dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -21,7 +21,9 @@
         <activity android:name=".activity_package.TwoPointSmoothDealActivity" />
         <activity android:name=".activity_package.PathMorphingBezierActivity" />
         <activity android:name=".activity_package.WaveActivity" />
-        <activity android:name=".activity_package.AddShoppingCartActivity"></activity>
+        <activity android:name=".activity_package.AddShoppingCartActivity" />
+        <activity android:name=".activity_package.LoadingPathMeasureActivity" />
+        <activity android:name=".activity_package.TenAnimationActivity"></activity>
     </application>
 
 </manifest>
