@@ -1,14 +1,16 @@
 package com.cml.androidlcmlsenioranimation;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.cml.androidlcmlsenioranimation.activity_package.PathMorphingBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.SecondBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.ThirdBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.TwoPointSmoothDealActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.VectorDrawableActivity;
+import com.cml.androidlcmlsenioranimation.activity_package.WaveActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,5 +31,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void twoPointSmoothDeal(View view){
         startActivity(new Intent(this,TwoPointSmoothDealActivity.class));
+    }
+    public void pathMorphingBezier(View view){
+        startActivity(new Intent(this,PathMorphingBezierActivity.class));
+    }
+    public void waveBezier(View view){
+        startActivity(new Intent(this,WaveActivity.class));
     }
 }

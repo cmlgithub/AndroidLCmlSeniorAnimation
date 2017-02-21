@@ -18,7 +18,9 @@
         <activity android:name=".activity_package.VectorDrawableActivity" />
         <activity android:name=".activity_package.SecondBezierActivity" />
         <activity android:name=".activity_package.ThirdBezierActivity" />
-        <activity android:name=".activity_package.TwoPointSmoothDealActivity"></activity>
+        <activity android:name=".activity_package.TwoPointSmoothDealActivity" />
+        <activity android:name=".activity_package.PathMorphingBezierActivity" />
+        <activity android:name=".activity_package.WaveActivity"></activity>
     </application>
 
 </manifest>
