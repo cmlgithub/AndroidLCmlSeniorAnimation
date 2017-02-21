@@ -75,4 +75,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WaveBezier" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:background="@color/colorAccent"
+        android:onClick="addShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AddShoppingCart" />
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.cml.androidlcmlsenioranimation.activity_package.AddShoppingCartActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.PathMorphingBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.SecondBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.ThirdBezierActivity;
@@ -37,5 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void waveBezier(View view){
         startActivity(new Intent(this,WaveActivity.class));
+    }
+    public void addShoppingCart(View view){
+        startActivity(new Intent(this,AddShoppingCartActivity.class));
     }
 }
