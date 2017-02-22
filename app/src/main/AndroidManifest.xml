@@ -23,7 +23,8 @@
         <activity android:name=".activity_package.WaveActivity" />
         <activity android:name=".activity_package.AddShoppingCartActivity" />
         <activity android:name=".activity_package.LoadingPathMeasureActivity" />
-        <activity android:name=".activity_package.TenAnimationActivity"></activity>
+        <activity android:name=".activity_package.TenAnimationActivity" />
+        <activity android:name=".activity_package.LoveRandomActivity"></activity>
     </application>
 
 </manifest>

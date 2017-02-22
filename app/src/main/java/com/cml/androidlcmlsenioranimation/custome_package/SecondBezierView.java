@@ -61,7 +61,7 @@ public class SecondBezierView extends View {
         mPaintText.setStyle(Paint.Style.STROKE);
 
         mPaintLine = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaintBezier.setStrokeWidth(5);
+        mPaintLine.setStrokeWidth(5);
         mPaintLine.setColor(Color.DKGRAY);
         mPaintLine.setStyle(Paint.Style.STROKE);
     }

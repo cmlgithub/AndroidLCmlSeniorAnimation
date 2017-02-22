@@ -64,7 +64,6 @@ public class AddShoppingCartView extends View implements View.OnClickListener {
 
         mPaintPath = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaintPath.setStyle(Paint.Style.STROKE);
-//        mPaintPath.setColor(Color.TRANSPARENT);
         mPaintPath.setStrokeWidth(8);
 
         mPaintCircle = new Paint(Paint.ANTI_ALIAS_FLAG);

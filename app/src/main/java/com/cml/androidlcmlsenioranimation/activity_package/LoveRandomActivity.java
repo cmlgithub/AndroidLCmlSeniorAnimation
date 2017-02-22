@@ -1,21 +1,20 @@
 package com.cml.androidlcmlsenioranimation.activity_package;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.cml.androidlcmlsenioranimation.R;
 
-public class TenAnimationActivity extends AppCompatActivity {
+public class LoveRandomActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ten_animation);
-    }
+        setContentView(R.layout.activity_love_random);
 
-    public void loveRandom(View view){
-        startActivity(new Intent(this,LoveRandomActivity.class));
+//        LoveRandomView mLove = (LoveRandomView) findViewById(R.id.love);
+
+
     }
 }
