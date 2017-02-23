@@ -25,6 +25,16 @@
         <activity android:name=".activity_package.LoadingPathMeasureActivity" />
         <activity android:name=".activity_package.TenAnimationActivity" />
         <activity android:name=".activity_package.LoveRandomActivity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo1.Demo1Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo2.Demo2Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo3.Demo3Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo4.Demo4Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo5.Demo5Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo6.Demo6Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo7.Demo7Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo8.Demo8Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo9.Demo9Activity"></activity>
+        <activity android:name="com.cml.androidlcmlsenioranimation.demo.demo.demo10.Demo10Activity"></activity>
     </application>
 
 </manifest>

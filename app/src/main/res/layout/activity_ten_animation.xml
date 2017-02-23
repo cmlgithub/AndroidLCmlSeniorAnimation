@@ -1,26 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ten_animation"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.cml.androidlcmlsenioranimation.activity_package.TenAnimationActivity">
+    android:layout_height="match_parent">
 
-
-    <TextView
-        android:textColor="@android:color/white"
-        android:padding="10dp"
-        android:gravity="center"
-        android:textSize="15sp"
-        android:background="@color/colorPrimary"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_ten_animation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="loveRandom"
-        android:text="LoveRandom" />
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.cml.androidlcmlsenioranimation.activity_package.TenAnimationActivity">
 
-</LinearLayout>
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loveRandom"
+            android:text="LoveRandom" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo1"
+            android:text="demo1" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo2"
+            android:text="demo2" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo3"
+            android:text="demo3" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo4"
+            android:text="demo4" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo5"
+            android:text="demo5" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo6"
+            android:text="demo6" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo7"
+            android:text="demo7" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo8"
+            android:text="demo8" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo9"
+            android:text="demo9" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="demo10"
+            android:text="demo10" />
+
+    </LinearLayout>
+
+</ScrollView>
+
