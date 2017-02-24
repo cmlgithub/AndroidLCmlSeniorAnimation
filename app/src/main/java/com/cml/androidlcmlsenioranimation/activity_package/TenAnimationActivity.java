@@ -26,7 +26,7 @@ public class TenAnimationActivity extends AppCompatActivity {
     }
 
     public void loveRandom(View view){
-        startActivity(new Intent(this,LoveRandomActivity.class));
+        startActivity(new Intent(this,SmallCircleLineBezierActivity.class));
     }
     public void demo1(View view){
         startActivity(new Intent(this, Demo1Activity.class));

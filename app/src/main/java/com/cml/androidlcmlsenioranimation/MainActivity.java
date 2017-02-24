@@ -14,6 +14,7 @@ import com.cml.androidlcmlsenioranimation.activity_package.ThirdBezierActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.TwoPointSmoothDealActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.VectorDrawableActivity;
 import com.cml.androidlcmlsenioranimation.activity_package.WaveActivity;
+import com.cml.androidlcmlsenioranimation.activity_package.demo.SelfTenAnimationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,5 +50,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void tenAnimation(View view){
         startActivity(new Intent(this,TenAnimationActivity.class));
+    }
+    public void selfTenAnimation(View view){
+        startActivity(new Intent(this,SelfTenAnimationActivity.class));
     }
 }

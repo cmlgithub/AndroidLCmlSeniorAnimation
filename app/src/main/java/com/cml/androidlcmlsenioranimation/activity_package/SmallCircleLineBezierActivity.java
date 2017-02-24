@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.cml.androidlcmlsenioranimation.R;
 
-public class LoveRandomActivity extends AppCompatActivity {
+public class SmallCircleLineBezierActivity extends AppCompatActivity {
 
 
     @Override
