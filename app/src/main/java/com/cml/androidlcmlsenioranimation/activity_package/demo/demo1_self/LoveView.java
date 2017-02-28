@@ -11,12 +11,13 @@ import android.view.View;
 
 import com.cml.androidlcmlsenioranimation.R;
 
+
 /**
  * author：cml on 2017/2/23
  * github：https://github.com/cmlgithub
  *
  *
- *       
+ *
 
  心形自定义View
  http://blog.csdn.net/zhoudailiang/article/details/46431685
@@ -27,14 +28,11 @@ import com.cml.androidlcmlsenioranimation.R;
 public class LoveView extends View {
 
 
-    private Paint mInnerPaint;
-    private Paint mOuterPaint;
+    private Paint mPaint;
 
-    private int innerColor;
-    private int outerColor;
+    private int loveColor;
 
-    private int borderWidth;
-    private Path mPath;
+    private Path mLovePath;
     private int screenWidthHalf;
     private int screenHeightHalf;
 
@@ -54,12 +52,7 @@ public class LoveView extends View {
 
         // get attr
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LoveView);
-        innerColor = typedArray.getColor(R.styleable.LoveView_innerColor, Color.RED);
-        outerColor = typedArray.getColor(R.styleable.LoveView_outerColor, Color.WHITE);
-        borderWidth = typedArray.getInt(R.styleable.LoveView_borderWidth, 2);
-        if(borderWidth < 4){
-            borderWidth = 4;
-        }
+        loveColor = typedArray.getColor(R.styleable.LoveView_innerColor, Color.RED);
 
         init();
 
@@ -69,20 +62,14 @@ public class LoveView extends View {
 
         at = new AnimThread();
 
-        mInnerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mInnerPaint.setStyle(Paint.Style.FILL);
-        mInnerPaint.setStrokeWidth(borderWidth-2);
-        mInnerPaint.setColor(innerColor);
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setStrokeWidth(2);
+        mPaint.setColor(loveColor);
 
+        mLovePath = new Path();
 
-        mOuterPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mOuterPaint.setStyle(Paint.Style.FILL);
-        mOuterPaint.setStrokeWidth(borderWidth);
-        mOuterPaint.setColor(outerColor);
-
-        mPath = new Path();
-
-        at.start();
+//        at.start();
     }
 
 
@@ -90,12 +77,12 @@ public class LoveView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        mPath.reset();
+        mLovePath.reset();
 
         screenWidthHalf = getMeasuredWidth() / 2;
         screenHeightHalf = getMeasuredHeight() / 2;
 
-        mPath.moveTo(screenWidthHalf, screenHeightHalf - 5 * rate);
+        mLovePath.moveTo(screenWidthHalf, screenHeightHalf - 5 * rate);
 
         // 根据心形函数画图
         for (double i = 0; i <= 2 * Math.PI; i += 0.001) {
@@ -105,11 +92,12 @@ public class LoveView extends View {
             y *= rate;
             x = screenWidthHalf - x;
             y = screenHeightHalf - y;
-            mPath.lineTo(x, y);
+
+            mLovePath.lineTo(x, y);
         }
 
-        canvas.drawPath(mPath, mOuterPaint);
-        canvas.drawPath(mPath, mInnerPaint);
+
+        canvas.drawPath(mLovePath, mPaint);
     }
 
     private class AnimThread extends Thread {

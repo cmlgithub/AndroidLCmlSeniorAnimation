@@ -8,8 +8,6 @@
 
     <declare-styleable name="LoveView">
         <attr name="innerColor" format="color"/>
-        <attr name="outerColor" format="color"/>
-        <attr name="borderWidth" format="integer"/>
     </declare-styleable>
 
 </resources>
