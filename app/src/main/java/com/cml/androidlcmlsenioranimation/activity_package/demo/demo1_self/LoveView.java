@@ -11,6 +11,8 @@ import android.view.View;
 
 import com.cml.androidlcmlsenioranimation.R;
 
+import java.util.Random;
+
 
 /**
  * author：cml on 2017/2/23
@@ -39,6 +41,9 @@ public class LoveView extends View {
     private float rate = 5; // 半径变化率
     private AnimThread at;
 
+    private int[] colorArray = new int[]{Color.RED,Color.WHITE,Color.GREEN,Color.BLACK};
+    private Random mRandom = new Random();
+
     public LoveView(Context context) {
         this(context,null);
     }
@@ -65,7 +70,7 @@ public class LoveView extends View {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(2);
-        mPaint.setColor(loveColor);
+        mPaint.setColor(colorArray[mRandom.nextInt(4)]);
 
         mLovePath = new Path();
 

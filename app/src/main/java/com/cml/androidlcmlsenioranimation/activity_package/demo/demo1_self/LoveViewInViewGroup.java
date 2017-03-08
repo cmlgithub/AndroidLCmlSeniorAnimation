@@ -74,20 +74,38 @@ public class LoveViewInViewGroup extends RelativeLayout {
         lp.addRule(ALIGN_PARENT_BOTTOM,TRUE);
         LoveView loveView = new LoveView(mContext);
         this.addView(loveView,lp);
+
+
         AnimatorSet animator = getAnimator(loveView);
-        animator.addListener(new AnimatorEndListener(loveView));
         animator.start();
+//        AnimatorSet animator = getAnimator(loveView);
+//        animator.addListener(new AnimatorEndListener(loveView));
+//        animator.start();
     }
 
-    public AnimatorSet getAnimator(View loveView){
+    public AnimatorSet getAnimator(final View loveView){
         AnimatorSet set = getEnterAnimator(loveView);
-        ValueAnimator bezierValueAnimator = getBezierValueAnimator(loveView);
-        AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playSequentially(set);
-        animatorSet.playSequentially(bezierValueAnimator);
-        animatorSet.setInterpolator(interpolators[mRandom.nextInt(4)]);
-        animatorSet.setTarget(loveView);
-        return animatorSet;
+        set.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                ValueAnimator bezierValueAnimator = getBezierValueAnimator(loveView);
+                AnimatorSet animatorSet = new AnimatorSet();
+                animatorSet.playSequentially(bezierValueAnimator);
+                animatorSet.setInterpolator(interpolators[mRandom.nextInt(4)]);
+                animatorSet.setTarget(loveView);
+                animatorSet.addListener(new AnimatorEndListener(loveView));
+                animatorSet.start();
+            }
+        });
+//        ValueAnimator bezierValueAnimator = getBezierValueAnimator(loveView);
+//        AnimatorSet animatorSet = new AnimatorSet();
+//        animatorSet.playSequentially(set);
+//        animatorSet.playSequentially(bezierValueAnimator);
+//        animatorSet.setInterpolator(interpolators[mRandom.nextInt(4)]);
+//        animatorSet.setTarget(loveView);
+//        return animatorSet;
+        return set;
     }
 
 
@@ -112,11 +130,19 @@ public class LoveViewInViewGroup extends RelativeLayout {
         ObjectAnimator scaleX = ObjectAnimator.ofFloat(target, View.SCALE_X, 0.2f, 1f);
         ObjectAnimator scaleY = ObjectAnimator.ofFloat(target, View.SCALE_Y, 0.2f, 1f);
         AnimatorSet enter = new AnimatorSet();
-        enter.setDuration(5000);
+        enter.setDuration(500);
         enter.setInterpolator(new LinearInterpolator());
         enter.playTogether(alpha,scaleX,scaleY);
         enter.setTarget(target);
+
         return enter;
+    }
+
+    private class ScaleListener extends AnimatorListenerAdapter{
+        @Override
+        public void onAnimationEnd(Animator animation) {
+
+        }
     }
 
     private class BezierListener implements ValueAnimator.AnimatorUpdateListener{
