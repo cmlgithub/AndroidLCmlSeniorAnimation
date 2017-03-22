@@ -64,8 +64,8 @@ public class Demo4View extends View {
         int height = MeasureSpec.getSize(heightMeasureSpec);
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-        mWidth = (3 * mPointCount + 1) * mPointRadius;// gap == radius
-        mHeight = mPointRadius * 2 * 10;// 3 circle height
+        mWidth = (3 * mPointCount + 1) * mPointRadius;// gap == radius (3*6+1)*25=475
+        mHeight = mPointRadius * 2 * 10;// 3 circle height  25*2*10=500
         if (widthMode != MeasureSpec.AT_MOST && heightMode != MeasureSpec.AT_MOST) {
             if (width < mWidth)
                 width = mWidth;

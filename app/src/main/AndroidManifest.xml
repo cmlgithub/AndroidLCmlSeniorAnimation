@@ -38,7 +38,8 @@
         <activity android:name=".activity_package.demo.SelfTenAnimationActivity" />
         <activity android:name=".activity_package.demo.demo1_self.SelfDemo1Activity" />
         <activity android:name=".activity_package.demo.demo2_self.SelfDemo2Activity" />
-        <activity android:name=".activity_package.demo.demo3_self.SelfDemo3Activity"></activity>
+        <activity android:name=".activity_package.demo.demo3_self.SelfDemo3Activity" />
+        <activity android:name=".activity_package.demo.demo4_self.SelfDemo4Activity"></activity>
     </application>
 
 </manifest>
